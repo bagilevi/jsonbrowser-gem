@@ -1,8 +1,6 @@
 # Jsonbrowser
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/jsonbrowser`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A tool for making sense of large JSON structures while debugging. It sends the JSON to a website and outputs a direct URL where you can browse the JSON structure.
 
 ## Installation
 
@@ -22,7 +20,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+order.to_json_browser
+# => "https://json.jkl.me/documents/dwqhaoKJrr"
+```
 
 ## Development
 
@@ -32,10 +33,9 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/jsonbrowser.
+Bug reports and pull requests are welcome on GitHub at https://github.com/bagilevi/jsonbrowser.
 
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
