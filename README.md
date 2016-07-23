@@ -28,6 +28,13 @@ JsonBrowser({ a: { b: [{ x: 13, y: 49}, { x: 45, y: -35 }], c: [3, 4]}})
 You can supply a JSON String, Hash, Array, or any object that responds to one of
 `to_json`, `as_json`, `to_hash`, `to_h`, `to_array`, `to_a` or `serializable_hash`.
 
+You can [host the web app yourself](https://github.com/bagilevi/jsonbrowser) and
+add this configuration:
+
+```ruby
+JsonBrowser.root = 'http://json.local' # no trailing slash
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

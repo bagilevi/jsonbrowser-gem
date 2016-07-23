@@ -8,10 +8,10 @@ end
 
 module JsonBrowser
   class << self
-    attr_accessor :host
+    attr_accessor :root
 
-    def host
-      @host || 'json.jkl.me'
+    def root
+      @root || 'https://json.jkl.me'
     end
   end
 
@@ -22,12 +22,12 @@ module JsonBrowser
   def self.get_url(subject)
     json = get_json_string(subject)
     response = RestClient.post(
-      "https://#{host}/documents?return=json",
+      "#{root}/documents?return=json",
       json,
       content_type: :json,
       accept: :json
     )
-    "https://#{host}#{JSON.parse(response.body)['path']}"
+    "#{root}#{JSON.parse(response.body)['path']}"
   end
 
   def self.get_json_string(subject)
