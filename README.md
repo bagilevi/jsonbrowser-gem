@@ -21,9 +21,12 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-order.to_json_browser
-# => "https://json.jkl.me/documents/dwqhaoKJrr"
+JsonBrowser({ a: { b: [{ x: 13, y: 49}, { x: 45, y: -35 }], c: [3, 4]}})
+# "https://json.jkl.me/documents/FFdTSmypfT"
 ```
+
+You can supply a JSON String, Hash, Array, or any object that responds to one of
+`to_json`, `as_json`, `to_hash`, `to_h`, `to_array`, `to_a` or `serializable_hash`.
 
 ## Development
 
