@@ -1,4 +1,4 @@
-# Jsonbrowser
+# Json Browser
 
 A tool for making sense of large JSON structures while debugging. It sends the JSON to a website and outputs a direct URL where you can browse the JSON structure.
 
